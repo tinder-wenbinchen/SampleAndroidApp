@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: TS Action step
         id: ts_step
-        uses: tinder-wenbinchen/sample-action-ts@v0.3.0
+        uses: tinder-wenbinchen/sample-action-ts@v0.3.1
         with:
           milliseconds: 10000
       # Use the output from the `ts_step` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.ts_step.outputs.time }}"
+        run: echo "The time was ${{ steps.ts_step.outputs.comment-id }}"
