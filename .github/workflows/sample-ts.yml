@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  sample_job_in_ts:
+    runs-on: ubuntu-latest
+    name: A job to test action in ts
+    steps:
+      - name: TS Action step
+        id: ts_step
+        uses: tinder-wenbinchen/sample-action-ts@v0.1.0
+        with:
+          milliseconds: 10000
+      # Use the output from the `ts_step` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.ts_step.outputs.time }}"
