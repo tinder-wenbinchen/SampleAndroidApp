@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: TS Action step
         id: ts_step
-        uses: tinder-wenbinchen/sample-action-ts@v0.3.6
+        uses: tinder-wenbinchen/sample-action-ts@v0.3.7
         with:
           milliseconds: 10000
       # Use the output from the `ts_step` step
