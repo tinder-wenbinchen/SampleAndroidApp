@@ -9,8 +9,9 @@ jobs:
     steps:
       - name: TS Action step
         id: ts_step
-        uses: tinder-wenbinchen/sample-action-ts@v0.3.7
+        uses: tinder-wenbinchen/sample-action-ts@v0.3.8
         with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
           milliseconds: 10000
       # Use the output from the `ts_step` step
       - name: Get the output time
