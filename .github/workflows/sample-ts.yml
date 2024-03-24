@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: TS Action step
         id: ts_step
-        uses: tinder-wenbinchen/sample-action-ts@v0.3.8
+        uses: tinder-wenbinchen/sample-action-ts@v0.3.9
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           milliseconds: 10000
