@@ -8,11 +8,6 @@ jobs:
     name: A job to test action in ts
     steps:
       - uses: actions/checkout@v4
-      - name: Calculating modified strings
-        id: ts_calc_strings
-        run: |
-          echo "${{ github.sha }}"
-          bash .github/calc_modified_strings.sh
       - name: TS Action step
         id: ts_step
         uses: tinder-wenbinchen/sample-action-ts@v0.3.11
@@ -22,3 +17,11 @@ jobs:
       # Use the output from the `ts_step` step
       - name: Get the output time
         run: echo "The time was ${{ steps.ts_step.outputs.comment-id }}"
+  job2:
+    runs-on: ubuntu-latest
+    name: Another job
+    steps:
+      - name: Calculating modified strings
+        id: ts_calc_strings
+        run: |
+          bash .github/calc_modified_strings.sh
