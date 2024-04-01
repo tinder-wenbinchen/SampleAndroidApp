@@ -14,4 +14,6 @@ do
   i=$((i+1))
 done
 concatStrings=${stringsNeedTranslation[@]}
-echo "updatedStrings=${concatStrings}" >> $GITHUB_OUTPUT
+echo ${concatStrings}
+echo "updatedStrings=+ <string name="app_name">SampleAndroidAppChange</string> + <string name="app_title">SampleAndroidApp</string> + <string name="app_logo">SampleAndroidApp</string> + <string name="app_state">SampleAndroidApp</string>
+" >> $GITHUB_OUTPUT
