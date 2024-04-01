@@ -1,0 +1,21 @@
+on:
+  pull_request:
+    types: [opened, edited, ready_for_review, reopened]
+
+jobs:
+  sample_job_in_ts:
+    runs-on: ubuntu-latest
+    name: A job to test action in ts
+    steps:
+      - uses: actions/checkout@v4
+      - name: Calculating modified strings
+        id: calc_strings
+        run: |
+          bash .github/calc_modified_strings.sh
+      - name: TS Action step
+        id: localization_step
+        if: steps.calc_strings.outputs.updatedStrings != ''
+        uses: tinder-wenbinchen/sample-action-ts@v0.3.13
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          updatedStrings: "${{ steps.calc_strings.outputs.updatedStrings }}"
