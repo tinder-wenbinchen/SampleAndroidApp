@@ -15,7 +15,7 @@ jobs:
           bash .github/calc_modified_strings.sh
       - name: TS Action step
         id: ts_step
-        uses: tinder-wenbinchen/sample-action-ts@v0.3.9
+        uses: tinder-wenbinchen/sample-action-ts@v0.3.10
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           milliseconds: 10000
