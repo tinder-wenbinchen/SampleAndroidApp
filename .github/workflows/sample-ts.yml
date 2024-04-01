@@ -17,4 +17,4 @@ jobs:
         uses: tinder-wenbinchen/sample-action-ts@v0.3.13
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          updatedStrings: ${{ steps.calc_strings.outputs.updatedStrings }}
+          updatedStrings: "${{ steps.calc_strings.outputs.updatedStrings }}"
