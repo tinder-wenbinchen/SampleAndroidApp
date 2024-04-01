@@ -14,4 +14,4 @@ do
   i=$((i+1))
 done
 concatStrings=${stringsNeedTranslation[@]}
-echo "updatedStrings=helloworld" >> $GITHUB_OUTPUT
+echo "updatedStrings=${concatStrings}" >> $GITHUB_OUTPUT
