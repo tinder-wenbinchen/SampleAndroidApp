@@ -1,0 +1,14 @@
+.github/calc_modified_strings.sh
+.github/workflows/sample-ts.yml
+app/src/main/res/values/colors.xml
+app/src/main/res/values/strings.xml
+build.gradle.kts
+mylibrary/.gitignore
+mylibrary/build.gradle.kts
+mylibrary/consumer-rules.pro
+mylibrary/proguard-rules.pro
+mylibrary/src/androidTest/java/com/bignerdranch/android/mylibrary/ExampleInstrumentedTest.kt
+mylibrary/src/main/AndroidManifest.xml
+mylibrary/src/main/res/values/strings.xml
+mylibrary/src/test/java/com/bignerdranch/android/mylibrary/ExampleUnitTest.kt
+settings.gradle.kts
