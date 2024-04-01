@@ -8,20 +8,13 @@ jobs:
     name: A job to test action in ts
     steps:
       - uses: actions/checkout@v4
-      - name: TS Action step
-        id: ts_step
-        uses: tinder-wenbinchen/sample-action-ts@v0.3.11
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          milliseconds: 10000
-      # Use the output from the `ts_step` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.ts_step.outputs.comment-id }}"
-  job2:
-    runs-on: ubuntu-latest
-    name: Another job
-    steps:
       - name: Calculating modified strings
-        id: ts_calc_strings
+        id: calc_strings
         run: |
           bash .github/calc_modified_strings.sh
+      - name: TS Action step
+        id: localization_step
+        uses: tinder-wenbinchen/sample-action-ts@v0.3.12
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          updatedStrings: ${{ steps.calc_strings.outputs.updatedStrings }}

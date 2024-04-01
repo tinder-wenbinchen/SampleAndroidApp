@@ -13,4 +13,4 @@ do
   stringsNeedTranslation[i]=$(git diff -U0 origin/master HEAD ${file} | grep '^\+[[:space:]]*<string name=' | grep -Ev '^(--- a/|\+\+\+ b/)')
   i=$((i+1))
 done
-echo ${stringsNeedTranslation[@]}
+echo "::set-output name=updatedStrings::${stringsNeedTranslation[@]}"
