@@ -37,6 +37,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
+// testing multiple commits
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
