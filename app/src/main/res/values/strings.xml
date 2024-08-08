@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SampleAndroidApp</string>
+    <string name="testing_new_string">Testign New String</string>
 </resources>
