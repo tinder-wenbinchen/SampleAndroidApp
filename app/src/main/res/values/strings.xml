@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">SampleAndroidApp</string>
+    <plurals name="days_plural">
+        <item quantity="one">%d day to enjoy!</item>
+        <item quantity="other">%d days to enjoy!</item>
+    </plurals>
     <string name="testing_new_string">Testign New String</string>
+    <plurals name="testing_plural_1">
+        <item quantity="one">Testing plural 1 singular</item>
+        <item quantity="other">Testing plurals form</item>
+    </plurals>
 </resources>
