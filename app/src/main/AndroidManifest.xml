@@ -13,6 +13,10 @@
         android:theme="@style/Theme.SampleAndroidApp"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.SampleAndroidApp" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
