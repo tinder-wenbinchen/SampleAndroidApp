@@ -1,12 +1,23 @@
 <resources>
-    <string name="app_name">SampleAndroidApp</string>
     <plurals name="days_plural">
-        <item quantity="one">%d day to enjoy!</item>
-        <item quantity="other">%d days to enjoy!</item>
+        <item quantity="one">%d day to enjoy update plural singular form item value!</item>
+        <item quantity="other">%d days to enjoy update plural form item value!</item>
     </plurals>
     <string name="testing_new_string">Testign New String</string>
-    <plurals name="testing_plural_1">
+    <string name="app_name">SampleAndroidApp</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <plurals name="testing_plural_1_update_plural_key">
         <item quantity="one">Testing plural 1 singular</item>
         <item quantity="other">Testing plurals form</item>
+    </plurals>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem.</string>
+    <plurals name="testing_add_new_plural">
+        <item quantity="one">testing add new plural singular</item>
+        <item quantity="other">testing add new plural form</item>
     </plurals>
 </resources>
