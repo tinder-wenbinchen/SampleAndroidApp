@@ -28,9 +28,8 @@ jobs:
         id: check_changes
         run: |
           chmod +x .github/test_branch_delete.sh
-          output_a_variable=$(bash .github/test_branch_delete.sh)
+          bash .github/test_branch_delete.sh
           echo "output_varaible value: $output_a_variable"
-          echo "output_a_variable=$output_a_variable" >> $GITHUB_ENV
 
       - run: |
           chmod +x .github/test_variable_pass.sh
