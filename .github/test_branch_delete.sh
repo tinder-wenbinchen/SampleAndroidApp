@@ -9,7 +9,7 @@ modifiedStringsXmlFiles=$(git --no-pager diff --diff-filter=d --name-only "$GITH
 
 OUTPUT_A_VARIABLE="15.20.0"
 # Output the milestone number to be captured by GitHub Actions
-echo "output_a_variable=$OUTPUT_A_VARIABLE" >> $GITHUB_ENV
+echo "output_a_variable=$OUTPUT_A_VARIABLE" >> "$GITHUB_ENV"
 
 # Check if grep failed or the variable is empty
 if [ "$exitCode" -eq 1 ] || [ -z "$modifiedStringsXmlFiles" ]; then
